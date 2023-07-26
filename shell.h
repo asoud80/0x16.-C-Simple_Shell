@@ -158,21 +158,21 @@ typedef struct bltin
 
 /* shell_SHloop.c */
 
-void frk_cmd(info_t *);
+void fork_cmd(info_t *);
 
-void found_cmd(info_t *);
+void find_cmd(info_t *);
 
-int shsh(info_t *, char **);
+int hsh(info_t *, char **);
 
-int found_bltin(info_t *);
+int find_builtin(info_t *);
 
 /* shell_parser.c */
 
-char *found_pth(info_t *, char *, char *);
+char *find_path(info_t *, char *, char *);
 
-char *dupp_char(char *, int, int);
+char *dup_char(char *, int, int);
 
-int Is_cmd(info_t *, char *);
+int is_cmd(info_t *, char *);
 
 /* simple_loopsh.c */
 
