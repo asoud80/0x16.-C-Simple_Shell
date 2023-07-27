@@ -1,19 +1,15 @@
 #include "shell.h"
 
-
 /**
- * main - the Entry Point
+ * main - entry point
+ * @ac: arg count
+ * @av: arg vector
  *
- * @ac: Arguments Count
- *
- * @av: Arguments Vector
- * Return: if Success 0, if Error 1.
+ * Return: 0 on success, 1 on error
  */
-
-
 int main(int ac, char **av)
 {
-	info_t info[] = {info_INIT};
+	info_t info[] = { INFO_INIT };
 	int fd = 2;
 
 	asm ("mov %1, %0\n\t"
